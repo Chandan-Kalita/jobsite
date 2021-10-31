@@ -1,0 +1,2 @@
+1.  Reg and login of recruiter -------------------------.done.
+2.  create index from recruiter-------------------------.
