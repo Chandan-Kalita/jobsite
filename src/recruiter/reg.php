@@ -19,10 +19,7 @@ if(isset($_POST['submit'])){
     $count = mysqli_num_rows($checkquery);
     if($count>0){
         ?>
-            <script>alert("Email Already Exist")
-                    window.location.href = window.location.href;
-            </script>
-
+            <script>alert("Email Already Exist")</script>
         <?php
     }else{
 
@@ -36,7 +33,8 @@ if(isset($_POST['submit'])){
 
         if($insert_res){
             mailUsing($email,$name,$otp);
-            echo '<script>window.location.href = "auth.php?u='.$id.'"</script>';
+            // echo '<script>window.location.href = "auth.php?u='.$id.'"</script>';
+            redirect("auth.php?u=$id");
             // header("location: auth.php?u=$email");
         }else{
 

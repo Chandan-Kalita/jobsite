@@ -51,7 +51,7 @@ function mailUsing($to,$toName,$otp)
 function redirect($url){
     ?>
         <script>
-            window.location.href = <?php echo $url ?>;
+            window.location.href = '<?php echo $url ?>';
         </script>
     <?php
 }

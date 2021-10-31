@@ -6,7 +6,7 @@
 </form>
 
 <?php
-
+session_start();
 if(isset($_POST['submit'])){
     include '../config.php';
     include '../inc/function.inc.php';
@@ -24,15 +24,18 @@ if(isset($_POST['submit'])){
                 ?>
                 <script>
                     alert("You have not verify your otp yet.. Please check your mail and get otp and verify yourself");
-                    window.location.href = 'auth.php?u=<?php echo $id; ?>'
+                    // window.location.href = 'auth.php?u=<?php //echo $id; ?>'
                 </script>
+
                 <?php
+                redirect("auth.php?u=$id");
             }else{
                 // echo 'yes';
                 $_SESSION['user'] = $email;
                 $_SESSION['name'] = $res['name'];
-                // redirect('www.youtube.com');
-                header("location:index.php");
+                redirect('index.php');
+                // header("location:index.php");
+
             }
         }else{
             echo 'No';
