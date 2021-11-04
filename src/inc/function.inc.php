@@ -57,5 +57,16 @@ function redirect($url){
 }
 
 
+//is valid recruiter
+//it will take recruiter id and a url(is recruiter not valid this function will redirect him to the url )
+function isValidRecruiter($con,$id, $url){
+    $validSQL = "select * from recruiter where id=$id";
+    $validQuery = mysqli_query($con, $validSQL);
+    if(mysqli_num_rows($validQuery)<1){
+        redirect($url);
+    }
+}
+
+
 
 ?>

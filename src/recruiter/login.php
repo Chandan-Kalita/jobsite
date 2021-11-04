@@ -33,6 +33,7 @@ if(isset($_POST['submit'])){
                 // echo 'yes';
                 $_SESSION['user'] = $email;
                 $_SESSION['name'] = $res['name'];
+                $_SESSION['id'] = $res['id'];
                 redirect('index.php');
                 // header("location:index.php");
 
@@ -46,4 +47,13 @@ if(isset($_POST['submit'])){
     }
 }
 
+
 ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="reg.php">Registration</a>

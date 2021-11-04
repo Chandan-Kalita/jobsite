@@ -1,5 +1,11 @@
 <?php
 session_start();
+include '../inc/function.inc.php';
+include '../config.php';
+if(!isset($_SESSION['user'])){
+    redirect('login.php');
+}
+
 
 ?>
 <!DOCTYPE html>

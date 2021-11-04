@@ -44,3 +44,10 @@ if(isset($_POST['submit'])){
 }
 
 ?>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="login.php">Login</a>

@@ -1,2 +1,14 @@
 1.  Reg and login of recruiter -------------------------.done.
-2.  create index from recruiter-------------------------.
+2.  Post Created Done.......... Some test pending..................All Done
+3.  Post that have reached last date need to be highlighted and 
+    then **Main User page where user can apply for the post 
+
+
+
+
+
+
+
+JS Script to add comma in numbers automatically
+var n = 2000;
+console.log(n.toLocaleString());
